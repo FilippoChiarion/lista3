@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main(){
+    int n1,n2,divisao;
+    printf("Valor 1: ");
+    fflush(stdin);
+    scanf("%i",&n1);
+
+    do{
+        printf("Valor 2: ");
+        fflush(stdin);
+        scanf("%i",&n2);
+        if (n2==0){printf("VALOR INVALIDO\n");}
+    }
+    while (n2==0);
+
+    divisao = n1/n2;
+    printf("\nO resultado da divisao e %i",divisao);
+}
